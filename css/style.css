@@ -26,9 +26,6 @@ body {
 	--spacer-double: calc(var(--spacer) * 2);
 }
 /* pro MOBIL!!!! */
-hr {
-  color: #1a1009;
-}
 
 .header__nazov {
   font-size: 24px;
@@ -56,6 +53,7 @@ hr {
 
 .onas {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .onas__text {
@@ -131,6 +129,7 @@ hr {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
 }
 
 /* SLUZBY!! */
@@ -328,8 +327,33 @@ hr {
   width: 100%;
   /* margin-top: 20px; */
   font-size: 12px;
-
 }
+
+.kontajner__sprava {
+  opacity: 0.2;
+  position: relative;
+}
+
+.kontakt__sprava {
+  width: 50%;
+  height: 100px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #1a1009;
+  box-shadow: #b19682 4px 4px;
+  background-color: #f0ecea;
+  border-radius: 10px;
+  opacity: 1;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  /* background-position-x: 50%; */
+  /* background-position-y: 40%; */
+}
+
+
 
 /* .kontajner__footer {
   border: 2px solid orange;
@@ -612,6 +636,7 @@ hr {
 
   hr {
     width: 100%;
+    color: #1a1009;
   }
 
   /* .technika__vykop {
@@ -639,16 +664,16 @@ hr {
  **************************************
 */
 
-.kontakt__grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: var(--spacer-bigger);
-  padding: 40px;
-}
+  .kontakt__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacer-bigger);
+    padding: 40px;
+  }
 
-.kontakt__title {
-	margin-top: var(--spacer-double);
-}
+  .kontakt__title {
+    margin-top: var(--spacer-double);
+  }
 
 
 /*
@@ -656,9 +681,9 @@ hr {
 	MAPA
  **************************************
 */
-.map {
-	padding: 0 0 20px 0;
-}
+  .map {
+    padding: 0 0 20px 0;
+  }
 
 
 /*
@@ -667,55 +692,58 @@ hr {
  **************************************
 */
 
-.form-field {
-	margin-bottom: var(--spacer);
+  .form-field {
+    margin-bottom: var(--spacer);
+  }
+
+  .form-field label {
+    display: block;
+    color: var(--grey-500);
+    font-size: 15px;
+    margin-bottom: var(--spacer-half);
+  }
+
+  .form-field :is(input, textarea, select) {
+    width: 100%;
+    padding: var(--spacer-half);
+    border: 1px solid var(--grey-700);
+    border-radius: 4px;
+  }
+
+  .required:after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+  }
+
+  /* FOOter!!! */
+
+  .footer {
+    /* background-color: #1a1009;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%; */
+    /* margin-top: 20px; */
+    height: 64px;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .content {
+    min-height: calc(100vh - 84px);
+  }
+
 }
 
-.form-field label {
-	display: block;
-	color: var(--grey-500);
-	font-size: 15px;
-	margin-bottom: var(--spacer-half);
-}
-
-.form-field :is(input, textarea, select) {
-	width: 100%;
-	padding: var(--spacer-half);
-	border: 1px solid var(--grey-700);
-	border-radius: 4px;
-}
-
-.required:after {
-	content: "*";
-	color: red;
-	margin-left: 4px;
-}
-
-/* FOOter!!! */
-
-.footer {
-  /* background-color: #1a1009;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%; */
-  /* margin-top: 20px; */
-  height: 64px;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.content {
-  min-height: calc(100vh - 84px);
-}
-
-}
 .kontajner {
   width: 100%; 
   max-width: 1500px; 
   background-image: radial-gradient( circle 1136px at 5.2% 14%,  #FFFFFF 0%, #dfd2c7 200% );
   margin: 0 auto;
 }
+
+
 
 /* .onas__container,
 .header__container { 
