@@ -691,6 +691,22 @@ hr {
 	margin-left: 4px;
 }
 
+.footer {
+  /* background-color: #1a1009;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%; */
+  /* margin-top: 20px; */
+  height: 64px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.content {
+  min-height: calc(100vh - 84px);
+}
+
 }
 .kontajner {
   width: 100%; 
