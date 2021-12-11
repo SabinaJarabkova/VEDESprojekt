@@ -691,6 +691,8 @@ hr {
 	margin-left: 4px;
 }
 
+/* FOOter!!! */
+
 .footer {
   /* background-color: #1a1009;
   color: white;
@@ -724,20 +726,3 @@ hr {
 } */
 
 
-/* FOOter!!! */
-
-.footer {
-  /* background-color: #1a1009;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%; */
-  /* margin-top: 20px; */
-  height: 64px;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.content {
-  min-height: calc(100vh - 84px);
-}
